@@ -1,9 +1,11 @@
-file = open("Day1/puzzle1.txt")
+from getData import *
+
+data = getInput(1).split('\n')
 elfs = []
 elfNum = 0
 elfs.append(0)
-for x in file:
-    if x != "\n":
+for x in data:
+    if x != "":
         elfs[elfNum] += int(x)
     else:
         elfNum = elfNum + 1
