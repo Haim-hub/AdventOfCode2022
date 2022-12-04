@@ -1,11 +1,12 @@
 from getData import *
 
 data = getInput(1).split('\n')
+
 elfs = []
 elfNum = 0
 elfs.append(0)
-for x in data:
-    if x != "":
+for line in data:
+    if line != "":
         elfs[elfNum] += int(x)
     else:
         elfNum = elfNum + 1
